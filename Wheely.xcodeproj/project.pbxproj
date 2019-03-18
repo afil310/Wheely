@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5550AF74223FBF7100507CFC /* WheelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5550AF73223FBF7100507CFC /* WheelyTests.swift */; };
 		55EA73D5223F727B00587DAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA73D4223F727B00587DAF /* AppDelegate.swift */; };
 		55EA73DC223F727C00587DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EA73DB223F727C00587DAF /* Assets.xcassets */; };
 		55EA73DF223F727C00587DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EA73DD223F727C00587DAF /* LaunchScreen.storyboard */; };
@@ -25,7 +26,20 @@
 		55EA7406223F819D00587DAF /* Wheely.gif in Resources */ = {isa = PBXBuildFile; fileRef = 55EA7405223F819D00587DAF /* Wheely.gif */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5550AF76223FBF7100507CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55EA73C9223F727B00587DAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55EA73D0223F727B00587DAF;
+			remoteInfo = Wheely;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5550AF71223FBF7100507CFC /* WheelyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5550AF73223FBF7100507CFC /* WheelyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyTests.swift; sourceTree = "<group>"; };
+		5550AF75223FBF7100507CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55EA73D1223F727B00587DAF /* Wheely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wheely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EA73D4223F727B00587DAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55EA73DB223F727C00587DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5550AF6E223FBF7100507CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55EA73CE223F727B00587DAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5550AF72223FBF7100507CFC /* WheelyTests */ = {
+			isa = PBXGroup;
+			children = (
+				5550AF73223FBF7100507CFC /* WheelyTests.swift */,
+				5550AF75223FBF7100507CFC /* Info.plist */,
+			);
+			path = WheelyTests;
+			sourceTree = "<group>";
+		};
 		55EA73C8223F727B00587DAF = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +96,7 @@
 				55EA73FB223F80DA00587DAF /* .travis.yml */,
 				55EA73FE223F80DA00587DAF /* .gitignore */,
 				55EA7404223F818400587DAF /* Screenshots */,
+				5550AF72223FBF7100507CFC /* WheelyTests */,
 				55EA73D2223F727B00587DAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				55EA73D1223F727B00587DAF /* Wheely.app */,
+				5550AF71223FBF7100507CFC /* WheelyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +180,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5550AF70223FBF7100507CFC /* WheelyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5550AF7A223FBF7100507CFC /* Build configuration list for PBXNativeTarget "WheelyTests" */;
+			buildPhases = (
+				5550AF6D223FBF7100507CFC /* Sources */,
+				5550AF6E223FBF7100507CFC /* Frameworks */,
+				5550AF6F223FBF7100507CFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5550AF77223FBF7100507CFC /* PBXTargetDependency */,
+			);
+			name = WheelyTests;
+			productName = WheelyTests;
+			productReference = 5550AF71223FBF7100507CFC /* WheelyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		55EA73D0223F727B00587DAF /* Wheely */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55EA73E3223F727C00587DAF /* Build configuration list for PBXNativeTarget "Wheely" */;
@@ -175,6 +225,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Andrey Filonov";
 				TargetAttributes = {
+					5550AF70223FBF7100507CFC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 55EA73D0223F727B00587DAF;
+					};
 					55EA73D0223F727B00587DAF = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -194,11 +248,19 @@
 			projectRoot = "";
 			targets = (
 				55EA73D0223F727B00587DAF /* Wheely */,
+				5550AF70223FBF7100507CFC /* WheelyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5550AF6F223FBF7100507CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55EA73CF223F727B00587DAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +278,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5550AF6D223FBF7100507CFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5550AF74223FBF7100507CFC /* WheelyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55EA73CD223F727B00587DAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +304,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5550AF77223FBF7100507CFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55EA73D0223F727B00587DAF /* Wheely */;
+			targetProxy = 5550AF76223FBF7100507CFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		55EA73DD223F727C00587DAF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -246,6 +324,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5550AF78223FBF7100507CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CX5D66CWL;
+				INFOPLIST_FILE = WheelyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = afil.WheelyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wheely.app/Wheely";
+			};
+			name = Debug;
+		};
+		5550AF79223FBF7100507CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CX5D66CWL;
+				INFOPLIST_FILE = WheelyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = afil.WheelyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wheely.app/Wheely";
+			};
+			name = Release;
+		};
 		55EA73E1223F727C00587DAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -403,6 +523,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5550AF7A223FBF7100507CFC /* Build configuration list for PBXNativeTarget "WheelyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5550AF78223FBF7100507CFC /* Debug */,
+				5550AF79223FBF7100507CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		55EA73CC223F727B00587DAF /* Build configuration list for PBXProject "Wheely" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
