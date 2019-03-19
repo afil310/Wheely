@@ -34,7 +34,7 @@ class InputViewController: UIViewController {
         title = InputView.title
     }
     
-    /// Setups the stack for "Add a new value" TextField and "Add" button.
+    /// Setups the stack for "Add a new value" UITextField and "Add" button.
     func setupAddFieldStack() {
         addNewValueTextField.translatesAutoresizingMaskIntoConstraints = false
         addNewValueTextField.backgroundColor = .white
@@ -97,11 +97,11 @@ class InputViewController: UIViewController {
             return
         }
         let wheelView = WheelViewController()
-        wheelView.wheelValues = tableDataSource.wheelValues // Passes data to the Wheel ViewController
+        wheelView.wheelValues = tableDataSource.wheelValues // Passes data to the WheelViewController
         navigationController?.pushViewController(wheelView, animated: true)
     }
     
-    /// Adds a new value from the TextField to the table data source and updates the TableView.
+    /// Adds a new value from the UITextField to the table data source and updates the UITableView.
     @objc func addButtonTapped() {
         addButton.animateTap()
         guard let newValue = addNewValueTextField.text,

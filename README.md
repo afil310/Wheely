@@ -7,7 +7,9 @@
 ## Description
 A simple take home project app written in Swift 4.2.
 
-Input screen: add some values to the table, or delete existing records by swaping left.
+The project does not use storyboards. All UI components created programmatically.
+
+Input screen: add some values to the table, or delete existing records by swiping left.
 The records persist between app launches.
 
 The Wheel screen: tap "Spin" button to rotate the wheel and get a random value.

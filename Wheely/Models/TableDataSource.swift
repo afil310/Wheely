@@ -29,7 +29,7 @@ class TableDataSource: NSObject {
         UserDefaults.standard.set(wheelValues, forKey: DataSource.savedValuesKey)
     }
     
-    /// Appends a new record for the array of values for the wheel labels, and persists the updated array.
+    /// Appends a new record to the array of values for the wheel labels, and persists the updated array.
     /// - parameter newValue: a value to be added to the array of strings.
     func addNewRecord(newValue: String) {
         wheelValues.append(newValue)
